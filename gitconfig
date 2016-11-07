@@ -1,0 +1,9 @@
+[user]
+	email = wangchuande1223@gmail.com
+	name = wangchuande
+[push]
+	default = simple
+[core]
+	editor = /usr/bin/vim
+[alias]
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
