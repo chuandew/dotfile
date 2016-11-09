@@ -9,7 +9,6 @@ export ZSH=/Users/wangchuande/.oh-my-zsh
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 # ZSH_THEME="robbyrussell"
 ZSH_THEME="agnoster"
-prompt_context () { }
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -53,7 +52,7 @@ prompt_context () { }
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(zsh-autosuggestions zsh-syntax-highlighting autojump osx brew git rbenv ruby rails rake pyenv python)
+plugins=(zsh-autosuggestions zsh-syntax-highlighting autojump osx brew git rbenv ruby rails rake pyenv python nvm)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -93,3 +92,7 @@ export PYENV_ROOT=/usr/local/var/pyenv
 if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
 if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi
 # . ~/.local/lib/python3.3/site-packages/powerline/bindings/zsh/powerline.zsh
+
+export NVM_DIR="/Users/wangchuande/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+prompt_context () { }
