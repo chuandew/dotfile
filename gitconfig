@@ -15,3 +15,9 @@
   br = branch
   last = log -l HEAD
   fl = log -u
+  r = reset
+  r1 = reset HEAD^
+  r2 = reset HEAD^^
+  rh = reset --hard
+  rh1 = reset HEAD^ --hard
+  rh2 = reset HEAD^^ --hard
