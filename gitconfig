@@ -6,6 +6,7 @@
 [core]
 	editor = /usr/bin/vim
 [alias]
+  la = "!git config -l | grep alias | cut -c 7-"
   ls = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --decorate --abbrev-commit
   ll = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --decorate --numstat --abbrev-commit
   st = status
@@ -13,3 +14,4 @@
   co = checkout
   br = branch
   last = log -l HEAD
+  fl = log -u
