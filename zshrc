@@ -52,7 +52,7 @@ ZSH_THEME="agnoster"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(zsh-autosuggestions zsh-syntax-highlighting autojump osx brew git rbenv ruby rails gem bundle rake capistrano pyenv python nvm)
+plugins=(zsh-autosuggestions zsh-syntax-highlighting autojump osx brew git rbenv ruby rails gem bundle rake capistrano pyenv python nvm redis-cli)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -84,6 +84,9 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias be="bundle exec"
+alias bi="bundle install"
+alias r="rails"
 prompt_context () { }
 if [ -d "$HOME/.local/bin" ]; then
   PATH="$HOME/.local/bin:$PATH"
@@ -91,3 +94,6 @@ fi
 eval "$(rbenv init -)"
 export NVM_DIR="/Users/wangchuande/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+eval "$(pyenv init -)"
+export PYENV_ROOT=/usr/local/var/pyenv
+if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi
