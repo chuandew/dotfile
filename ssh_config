@@ -1,0 +1,57 @@
+Host *
+  UseKeychain yes
+  AddKeysToAgent yes
+Host 30
+  hostname 192.168.200.30
+  user longen
+Host 90
+  hostname 192.168.200.90
+  user longen
+Host 86
+  hostname 192.168.200.86
+  user longen
+Host 87
+  hostname 192.168.200.87
+  user longen
+Host 88
+  hostname 192.168.200.88
+  user longen
+Host myvps
+  hostname 191.101.236.213
+  user root
+Host 130
+  hostname 192.168.200.130
+  user longen
+Host 101
+  hostname 192.168.200.101
+  user longen
+Host 125
+  hostname 192.168.200.125
+  user longen
+Host 141
+  hostname 192.168.200.141
+  user longen
+Host 142
+  hostname 192.168.200.142
+  user longen
+Host 143
+  hostname 192.168.200.143
+  user longen
+Host 150
+  hostname 192.168.200.150
+  user longen
+Host 151
+  hostname 192.168.200.151
+  user longen
+Host 152
+  hostname 192.168.200.152
+  user longen
+Host 153
+  hostname 192.168.200.153
+  user longen
+Host 154
+  hostname 192.168.200.154
+  user longen
+Host 155
+  hostname 192.168.200.155
+  user longen

@@ -86,14 +86,18 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias be="bundle exec"
 alias bi="bundle install"
-alias r="rails"
+alias rs="bundle exec rails s -b 0.0.0.0"
+alias rc="bundle exec rails c"
 prompt_context () { }
 if [ -d "$HOME/.local/bin" ]; then
   PATH="$HOME/.local/bin:$PATH"
 fi
+export PATH="/usr/local/sbin:$PATH"
+export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 export NVM_DIR="/Users/wangchuande/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 eval "$(pyenv init -)"
 export PYENV_ROOT=/usr/local/var/pyenv
+export PATH="$PATH:`yarn global bin`"
 if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi
