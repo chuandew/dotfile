@@ -4,6 +4,27 @@ Host *
 Host 30
   hostname 192.168.200.30
   user longen
+Host 31
+  hostname 192.168.200.31
+  user longen
+Host 33
+  hostname 192.168.200.33
+  user longen
+Host 34
+  hostname 192.168.200.34
+  user longen
+Host 35
+  hostname 192.168.200.35
+  user longen
+Host 36
+  hostname 192.168.200.36
+  user longen
+Host 37
+  hostname 192.168.200.37
+  user longen
+Host 38
+  hostname 192.168.200.38
+  user longen
 Host 90
   hostname 192.168.200.90
   user longen
