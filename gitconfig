@@ -6,13 +6,14 @@
 [core]
 	editor = /usr/bin/vim
 	excludesfile = /Users/wangchuande/.gitignore_global
-[branch "master"]
-      mergeoptions = --no-ff
 [alias]
   la = "!git config -l | grep alias | cut -c 7-"
   ls = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --decorate --abbrev-commit
   ll = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --decorate --numstat --abbrev-commit
+  lm = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --decorate --abbrev-commit --author wangchuande
+  sl = shortlog -n 
   st = status
+  sh = stash
   ci = commit
   co = checkout
   br = branch
@@ -24,6 +25,8 @@
   rh = reset --hard
   rh1 = reset HEAD^ --hard
   rh2 = reset HEAD^^ --hard
+  df = diff
+  dc = diff --cached 
   dlc = diff --cached HEAD^
   rl = reflog  --relative-date
 [branch]

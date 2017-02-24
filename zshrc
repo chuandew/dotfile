@@ -88,6 +88,7 @@ alias be="bundle exec"
 alias bi="bundle install"
 alias rs="bundle exec rails s -b 0.0.0.0"
 alias rc="bundle exec rails c"
+alias g='git'
 prompt_context () { }
 if [ -d "$HOME/.local/bin" ]; then
   PATH="$HOME/.local/bin:$PATH"
