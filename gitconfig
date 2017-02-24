@@ -31,3 +31,5 @@
   rl = reflog  --relative-date
 [branch]
 	autosetuprebase = always
+[pull]
+	rebase = true
