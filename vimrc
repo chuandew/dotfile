@@ -5,7 +5,7 @@ set background=dark
 "设置配色，这里选择的是desert，也有其他方案，在vim中输入:color 在敲tab键可以查看
 colorscheme  desert
 "用空格键替换制表符
-set expandtab
+" set expandtab
 ""制表符占2个空格
 set tabstop=2
 "设定 << 和 >> 命令移动时的宽度为2

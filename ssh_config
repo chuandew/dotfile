@@ -19,20 +19,34 @@ Host 37
   hostname 192.168.200.37
 Host 38
   hostname 192.168.200.38
-Host 90
-  hostname 192.168.200.90
+Host 40
+  hostname 192.168.200.40
+Host 50
+  hostname 192.168.200.50
+Host 51
+  hostname 192.168.200.51
 Host 86
   hostname 192.168.200.86
 Host 87
   hostname 192.168.200.87
 Host 88
   hostname 192.168.200.88
+Host 90
+  hostname 192.168.200.90
+Host 91
+  hostname 192.168.200.91
+Host 93
+  hostname 192.168.200.93
+Host 94
+  hostname 192.168.200.94
 Host 130
   hostname 192.168.200.130
 Host 101
   hostname 192.168.200.101
 Host 125
   hostname 192.168.200.125
+Host 132
+  hostname 192.168.200.132
 Host 141
   hostname 192.168.200.141
 Host 142
@@ -41,7 +55,6 @@ Host 143
   hostname 192.168.200.143
 Host 144
   hostname 192.168.200.144
-Host 150
 Host 150
   hostname 192.168.200.150
 Host 151

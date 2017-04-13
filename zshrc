@@ -9,6 +9,9 @@ export ZSH=/Users/wangchuande/.oh-my-zsh
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 # ZSH_THEME="robbyrussell"
 ZSH_THEME="agnoster"
+# ZSH_THEME="ys"
+# ZSH_THEME="spaceship"
+# ZSH_THEME="suvash"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -52,7 +55,7 @@ ZSH_THEME="agnoster"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(zsh-autosuggestions zsh-syntax-highlighting autojump osx brew git rbenv ruby rails gem bundle rake capistrano pyenv python nvm redis-cli)
+plugins=(zsh-autosuggestions zsh-syntax-highlighting autojump osx brew git rbenv ruby rails gem bundle rake capistrano pyenv python nvm redis-cli docker docker-compose mvn)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -89,6 +92,7 @@ alias bi="bundle install"
 alias rs="bundle exec rails s -b 0.0.0.0"
 alias rc="bundle exec rails c"
 alias g='git'
+alias ctags="`brew --prefix`/bin/ctags"
 prompt_context () { }
 if [ -d "$HOME/.local/bin" ]; then
   PATH="$HOME/.local/bin:$PATH"
@@ -98,7 +102,11 @@ export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 export NVM_DIR="/Users/wangchuande/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
-eval "$(pyenv init -)"
-export PYENV_ROOT=/usr/local/var/pyenv
 export PATH="$PATH:`yarn global bin`"
-if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+export PATH="/usr/local/opt/sqlite/bin:$PATH"
+export PATH="/usr/local/opt/openssl@1.1/bin:$PATH"
+export ANSIBLE_HOSTS="$HOME/ansible_hosts"
+export GTAGSLABEL=pygments
