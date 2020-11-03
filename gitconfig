@@ -6,6 +6,7 @@
 [core]
 	editor = /usr/bin/vim
 	excludesfile = /Users/wangchuande/.gitignore_global
+	precomposeUnicode = true
 [alias]
   la = "!git config -l | grep alias | cut -c 7-"
   ls = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --decorate --abbrev-commit
@@ -29,6 +30,7 @@
   dc = diff --cached 
   dlc = diff --cached HEAD^
   rl = reflog  --relative-date
+	ig = "!git check-ignore **/* -v"
 [branch]
 	autosetuprebase = always
 [pull]

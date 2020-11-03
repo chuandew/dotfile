@@ -69,11 +69,6 @@ nnoremap <Leader>w\| <C-W>v
 nnoremap tn gt
 nnoremap tp gT
 
-" built in search looks better
-nnoremap / :action Find<CR>
-" but preserve ideavim search
-nnoremap <Leader>/ /
-
 nnoremap <Leader>;; :action CommentByLineComment<CR>
 
 nnoremap <Leader>bb :action ToggleLineBreakpoint<CR>

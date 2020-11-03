@@ -7,8 +7,8 @@ export ZSH=/Users/wangchuande/.oh-my-zsh
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-# ZSH_THEME="robbyrussell"
-ZSH_THEME="agnoster"
+ZSH_THEME="robbyrussell"
+# ZSH_THEME="agnoster"
 # ZSH_THEME="ys"
 # ZSH_THEME="spaceship"
 # ZSH_THEME="suvash"
@@ -24,7 +24,7 @@ ZSH_THEME="agnoster"
 # DISABLE_AUTO_UPDATE="true"
 
 # Uncomment the following line to change how often to auto-update (in days).
-# export UPDATE_ZSH_DAYS=13
+export UPDATE_ZSH_DAYS=7
 
 # Uncomment the following line to disable colors in ls.
 # DISABLE_LS_COLORS="true"
@@ -55,7 +55,7 @@ ZSH_THEME="agnoster"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(zsh-autosuggestions zsh-syntax-highlighting autojump osx brew git rbenv ruby rails gem bundle rake capistrano pyenv python nvm redis-cli docker docker-compose mvn)
+plugins=(docker-machine brew git osx zsh-autosuggestions zsh-syntax-highlighting autojump mvn kubectl)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -87,26 +87,15 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias be="bundle exec"
-alias bi="bundle install"
-alias rs="bundle exec rails s -b 0.0.0.0"
-alias rc="bundle exec rails c"
 alias g='git'
-alias ctags="`brew --prefix`/bin/ctags"
+alias kcl='kubectl'
+alias gs='git svn'
+alias ctags="/usr/local/bin/ctags"
 prompt_context () { }
-if [ -d "$HOME/.local/bin" ]; then
-  PATH="$HOME/.local/bin:$PATH"
-fi
-export PATH="/usr/local/sbin:$PATH"
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
-export NVM_DIR="/Users/wangchuande/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
-export PATH="$PATH:`yarn global bin`"
-export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
-export PATH="/usr/local/opt/sqlite/bin:$PATH"
-export PATH="/usr/local/opt/openssl@1.1/bin:$PATH"
-export ANSIBLE_HOSTS="$HOME/ansible_hosts"
-export GTAGSLABEL=pygments
+eval "$(jenv init -)"
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

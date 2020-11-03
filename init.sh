@@ -14,3 +14,7 @@ ln -s `pwd`/gitconfig ~/.gitconfig
 echo "create .aspell.conf"
 rm ~/.aspell.conf
 ln -s `pwd`/aspell.conf ~/.aspell.conf
+
+echo "create .ideavimrc"
+rm ~/.ideavimrc
+ln -s `pwd`/ideavimrc ~/.ideavimrc
