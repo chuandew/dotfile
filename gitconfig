@@ -31,6 +31,12 @@
   dlc = diff --cached HEAD^
   rl = reflog  --relative-date
 	ig = "!git check-ignore **/* -v"
+  sbi = submodule init
+  sbu = submodule update
+  sbp = submodule foreach git pull
+  sbc = submodule foreach git co master
+  sbs = submodule foreach git status
+  sbr = submodule update --init --recursive
 [branch]
 	autosetuprebase = always
 [pull]
