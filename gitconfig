@@ -37,6 +37,7 @@
   sbc = submodule foreach git co master
   sbs = submodule foreach git status
   sbr = submodule update --init --recursive
+  sbd = submodule foreach git diff
 [branch]
 	autosetuprebase = always
 [pull]
