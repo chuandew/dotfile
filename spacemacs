@@ -43,6 +43,7 @@ This function should only modify configuration layer settings."
      emacs-lisp
      ;; git
      helm
+     dap
      (lsp :variables
           lsp-restart 'auto-restart) ; if the server exits, just restart it without prompting
      (c-c++ :variables
@@ -50,6 +51,7 @@ This function should only modify configuration layer settings."
             c-c++-enable-google-style t
             c-c++-enable-google-newline t
             c-c++-enable-auto-newline t)
+     (java :variables java-backend 'lsp)
      javascript
      markdown
      multiple-cursors
@@ -418,7 +420,7 @@ It should only modify the values of Spacemacs settings."
 
    ;; If non-nil, start an Emacs server if one is not already running.
    ;; (default nil)
-   dotspacemacs-enable-server nil
+   dotspacemacs-enable-server t
 
    ;; Set the emacs server socket location.
    ;; If nil, uses whatever the Emacs default is, otherwise a directory path
@@ -518,6 +520,8 @@ If you are unsure, try setting them in `dotspacemacs/user-config' first."
 This function is called only while dumping Spacemacs configuration. You can
 `require' or `load' the libraries of your choice that will be included in the
 dump."
+  (setenv "JAVA_HOME"  "/usr/lib/jvm/java-1.8.0-amazon-corretto")
+  (setq lsp-java-java-path "/usr/lib/jvm/java-1.8.0-amazon-corretto/bin/java")
   )
 
 (defun dotspacemacs/user-config ()
@@ -526,7 +530,9 @@ This function is called at the very end of Spacemacs startup, after layer
 configuration.
 Put your configuration code here, except for variables that should be set
 before packages are loaded."
+
   (setq x-select-enable-clipboard t)
+  (setq projectile-git-submodule-command nil)
   ;; (setq enable-local-variables t)
   ;; (put 'helm-make-build-dir 'safe-local-variable 'stringp)
   ;; (put 'compile-commands-dir 'safe-local-variable 'stringp)
