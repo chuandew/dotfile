@@ -6,7 +6,7 @@ set ignorecase
 set smartcase
 set showmode
 set number
-set relativenumber
+"set relativenumber
 set scrolloff=3
 set history=100000
 set clipboard=unnamed
@@ -106,3 +106,4 @@ nnoremap <Leader>su :action ShowUsages<CR>
 nnoremap <Leader>tc  :action CloseActiveTab<CR>
 nnoremap <Leader>tl Vy<CR>:action ActivateTerminalToolWindow<CR>
 vnoremap <Leader>tl y<CR>:action ActivateTerminalToolWindow<CR>
+set ideajoin

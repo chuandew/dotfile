@@ -25,7 +25,7 @@ set ruler
 " 开启行号显示
 set number
 " 相对行号
-set relativenumber
+" set relativenumber
 " 高亮显示当前行/列
 set cursorline
 " 高亮显示搜索结果

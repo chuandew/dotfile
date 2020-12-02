@@ -5,7 +5,7 @@
 	default = simple
 [core]
 	editor = /usr/bin/vim
-	excludesfile = /Users/wangchuande/.gitignore_global
+	excludesfile = "$HOME/.gitignore_global"
 	precomposeUnicode = true
 [alias]
   la = "!git config -l | grep alias | cut -c 7-"
