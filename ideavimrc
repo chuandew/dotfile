@@ -1,6 +1,6 @@
-"set SPACE as leader key"
+"you can set SPACE as leader key"
 nnoremap <SPACE> <Nop>
-let mapleader=" "
+let mapleader=","
 
 set hlsearch
 set incsearch
@@ -10,7 +10,11 @@ set showmode
 set number
 set scrolloff=3
 set history=100000
-set clipboard=unnamed
+"Copy to system clipboard as well"
+set clipboard+=unnamed
+
+"Multiple cursors support"
+set multiple-cursors
 
 " clear the highlighted search result"
 nnoremap <Leader>sc :nohlsearch<CR>
