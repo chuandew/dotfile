@@ -1,6 +1,6 @@
 "you can set SPACE as leader key"
 nnoremap <SPACE> <Nop>
-let mapleader=","
+let mapleader=" "
 
 set hlsearch
 set incsearch
