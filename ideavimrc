@@ -111,4 +111,5 @@ nnoremap <Leader>su :action ShowUsages<CR>
 
 nnoremap <Leader>tc :action CloseActiveTab<CR>
 nnoremap <Leader>tl :action ActivateTerminalToolWindow<CR>
+
 set ideajoin
