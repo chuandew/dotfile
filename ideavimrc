@@ -91,6 +91,7 @@ nnoremap <Leader>gt :action GotoTest<CR>
 nnoremap <Leader>gb :action Back<CR>
 nnoremap <Leader>gf :action Forward<CR>
 
+nnoremap <Leader>fs :action GotoSymbol<CR>
 nnoremap <Leader>fp :action ShowFilePath<CR>
 nnoremap <Leader>fu :action FindUsages<CR>
 
