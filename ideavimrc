@@ -75,12 +75,18 @@ nnoremap tn gt
 nnoremap tp gT
 
 nnoremap <Leader>;; :action CommentByLineComment<CR>
-nnoremap <Leader>bb :action ToggleLineBreakpoint<CR>
-nnoremap <Leader>br :action ViewBreakpoints<CR>
+
+"debug config"
+nnoremap <Leader>db :action ToggleLineBreakpoint<CR>
+nnoremap <Leader>dr :action ViewBreakpoints<CR>
 
 nnoremap <Leader>cv :action ChangeView<CR>
-
 nnoremap <Leader>cd :action ChooseDebugConfiguration<CR>
+
+"bookmark config"
+nnoremap <Leader>bt :action ToggleBookmark<CR>
+nnoremap <Leader>bn :action GotoNextBookmark<CR>
+nnoremap <Leader>bp :action GotoPreviousBookmark<CR>
 
 nnoremap <Leader>ga :action GotoAction<CR>
 nnoremap <Leader>gc :action GotoClass<CR>
