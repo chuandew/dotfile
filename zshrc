@@ -68,7 +68,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git z zsh-autosuggestions zsh-syntax-highlighting)
+plugins=(git z zsh-autosuggestions zsh-syntax-highlighting zsh-completions k)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -103,7 +103,11 @@ export LANG=en_US.UTF-8
 # export JAVA_HOME="/usr/lib/jvm/java-1.8.0-amazon-corretto"
 export PATH=~/.emacs.d/bin:$PATH:/usr/local/go/bin
 export GOROOT=/usr/local/go
-alias e='emacsclient -t'
+export GOPATH=~/workspace/go
+export PATH=$PATH:/usr/local/go/bin
 alias eg='emacsclient -c --no-wait'
 export PATH="$HOME/.jenv/bin:$PATH"
 eval "$(jenv init -)"
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
