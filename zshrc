@@ -68,7 +68,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git z zsh-autosuggestions zsh-syntax-highlighting zsh-completions k)
+plugins=(git z zsh-autosuggestions zsh-syntax-highlighting rand-quote extract history-substring-search k)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -97,6 +97,8 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+bindkey -M emacs '^P' history-substring-search-up
+bindkey -M emacs '^N' history-substring-search-down
 
 export LANGUAGE=en_US
 export LANG=en_US.UTF-8
