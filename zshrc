@@ -107,6 +107,7 @@ export PATH=~/.emacs.d/bin:$PATH:/usr/local/go/bin
 export GOROOT=/usr/local/go
 export GOPATH=~/workspace/go
 export PATH=$PATH:/usr/local/go/bin
+alias e='emacsclient -t'
 alias eg='emacsclient -c --no-wait'
 export PATH="$HOME/.jenv/bin:$PATH"
 eval "$(jenv init -)"

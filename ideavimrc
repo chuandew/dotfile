@@ -88,8 +88,6 @@ nnoremap <Leader>bt :action ToggleBookmark<CR>
 nnoremap <Leader>bn :action GotoNextBookmark<CR>
 nnoremap <Leader>bp :action GotoPreviousBookmark<CR>
 
-nnoremap <Leader>ga :action GotoAction<CR>
-nnoremap <Leader>gc :action GotoClass<CR>
 nnoremap <Leader>gg :action GotoDeclaration<CR>
 nnoremap <Leader>gm :action GotoImplementation<CR>
 nnoremap <Leader>gs :action GotoSuperMethod<CR>
@@ -97,6 +95,8 @@ nnoremap <Leader>gt :action GotoTest<CR>
 nnoremap <Leader>gb :action Back<CR>
 nnoremap <Leader>gf :action Forward<CR>
 
+nnoremap <Leader>fa :action GotoAction<CR>
+nnoremap <Leader>fc :action GotoClass<CR>
 nnoremap <Leader>fs :action GotoSymbol<CR>
 nnoremap <Leader>fp :action ShowFilePath<CR>
 nnoremap <Leader>fu :action FindUsages<CR>
