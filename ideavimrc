@@ -40,8 +40,6 @@ inoremap <C-d> <Delete>
 
 " Quit insert mode"
 inoremap jj <Esc>
-inoremap jk <Esc>
-inoremap kk <Esc>
 
 " Quit visual mode"
 vnoremap v <Esc>
@@ -68,20 +66,15 @@ nnoremap <Leader>wl <C-W>l
 nnoremap <Leader>ws <C-W>s
 nnoremap <Leader>w- <C-W>s
 nnoremap <Leader>wv <C-W>v
-nnoremap <Leader>w\| <C-W>v
+nnoremap <Leader>w| <C-W>v
 
 " Tab operation"
 nnoremap tn gt
 nnoremap tp gT
 
-nnoremap <Leader>;; :action CommentByLineComment<CR>
-
 "debug config"
 nnoremap <Leader>db :action ToggleLineBreakpoint<CR>
 nnoremap <Leader>dr :action ViewBreakpoints<CR>
-
-nnoremap <Leader>cv :action ChangeView<CR>
-nnoremap <Leader>cd :action ChooseDebugConfiguration<CR>
 
 "bookmark config"
 nnoremap <Leader>bt :action ToggleBookmark<CR>
@@ -95,11 +88,25 @@ nnoremap <Leader>gt :action GotoTest<CR>
 nnoremap <Leader>gb :action Back<CR>
 nnoremap <Leader>gf :action Forward<CR>
 
-nnoremap <Leader>fa :action GotoAction<CR>
-nnoremap <Leader>fc :action GotoClass<CR>
-nnoremap <Leader>fs :action GotoSymbol<CR>
-nnoremap <Leader>fp :action ShowFilePath<CR>
-nnoremap <Leader>fu :action FindUsages<CR>
+"action about search"
+nnoremap <Leader>ss :action SearchEverywhere<CR>
+nnoremap <Leader>sa :action GotoAction<CR>
+nnoremap <Leader>sc :action GotoClass<CR>
+nnoremap <Leader>sf :action GotoSymbol<CR>
+nnoremap <Leader>sp :action ShowFilePath<CR>
+nnoremap <Leader>su :action FindUsages<CR>
+nnoremap <Leader>se :action SearchEverywhere<CR>
+"nnoremap <Leader>su :action ShowUsages<CR>"
+
+"action about files"
+nnoremap <Leader>ff :action GotoFile<CR>
+nnoremap <Leader>fr :action RecentFiles<CR>
+
+"action about code"
+nnoremap <Leader>cg :action Generate<CR>
+
+nnoremap <Leader>cv :action ChangeView<CR>
+nnoremap <Leader>cd :action ChooseDebugConfiguration<CR>
 
 nnoremap <Leader>ic :action InspectCode<CR>
 
@@ -113,8 +120,6 @@ nnoremap <Leader>rc :action ChooseRunConfiguration<CR>
 nnoremap <Leader>re :action RenameElement<CR>
 nnoremap <Leader>rf :action RenameFile<CR>
 
-nnoremap <Leader>se :action SearchEverywhere<CR>
-nnoremap <Leader>su :action ShowUsages<CR>
 
 nnoremap <Leader>tc :action CloseActiveTab<CR>
 nnoremap <Leader>tl :action ActivateTerminalToolWindow<CR>
