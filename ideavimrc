@@ -17,7 +17,7 @@ set clipboard+=unnamed
 set multiple-cursors
 
 " clear the highlighted search result"
-nnoremap <Leader>sc :nohlsearch<CR>
+nnoremap <Leader>hc :nohlsearch<CR>
 
 nnoremap <Leader>fs :w<CR>
 
@@ -69,8 +69,6 @@ nnoremap <Leader>wv <C-W>v
 nnoremap <Leader>w| <C-W>v
 
 " Tab operation"
-nnoremap tn gt
-nnoremap tp gT
 
 "debug config"
 nnoremap <Leader>db :action ToggleLineBreakpoint<CR>
