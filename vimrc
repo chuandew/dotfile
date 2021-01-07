@@ -1,3 +1,5 @@
+set hidden
+
 "打开语法高亮
 syntax on
 "设置背景色，每种配色有两种方案，一个light、一个dark
