@@ -50,3 +50,5 @@
       prompt = false
 [difftool "meld"]
       cmd = meld "$LOCAL" "$REMOTE"
+[credential]
+	helper = store
