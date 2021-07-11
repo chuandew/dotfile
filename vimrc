@@ -44,15 +44,16 @@ nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
-
-let mapleader="'"
-inoremap jk <ESC>
+" no swap
+set noswapfile
 
 " 文件类型检测
 filetype plugin indent on 
 
 autocmd Filetype ruby setlocal ts=2 sts=2 sw=2
 autocmd Filetype python setlocal ts=4 sts=4 sw=4
+let mapleader="'"
+inoremap jk <ESC>
 " if &diff
 "  colorscheme evening
 " endif
