@@ -39,6 +39,8 @@ filetype indent on
 set showcmd
 " disable swap file
 set noswapfile
+" enable search count
+set shortmess-=S
 "split navigations
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
