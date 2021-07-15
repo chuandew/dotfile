@@ -1,10 +1,52 @@
-set hidden
+" Specify a directory for plugins
+" - For Neovim: stdpath('data') . '/plugged'
+" - Avoid using standard Vim directory names like 'plugin'
+" call plug#begin('~/.vim/plugged')
 
+" Make sure you use single quotes
+
+" Shorthand notation; fetches https://github.com/junegunn/vim-easy-align
+"Plug 'junegunn/vim-easy-align'
+"
+"" Any valid git URL is allowed
+"Plug 'https://github.com/junegunn/vim-github-dashboard.git'
+"
+"" Multiple Plug commands can be written in a single line using | separators
+"Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
+"
+"" On-demand loading
+"Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+"Plug 'tpope/vim-fireplace', { 'for': 'clojure' }
+"
+"" Using a non-default branch
+"Plug 'rdnetto/YCM-Generator', { 'branch': 'stable' }
+"
+"" Using a tagged release; wildcard allowed (requires git 1.9.2 or above)
+"Plug 'fatih/vim-go', { 'tag': '*' }
+"
+"" Plugin options
+"Plug 'nsf/gocode', { 'tag': 'v.20150303', 'rtp': 'vim' }
+"
+"
+"" Unmanaged plugin (manually installed and updated)
+"Plug '~/my-prototype-plugin'
+
+" Plug 'junegunn/fzf.vim'
+" Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+
+" Plug 'morhetz/gruvbox'
+
+" Initialize plugin system
+" call plug#end()
+" *****************************end vim-plug*********************
+
+set hidden
 "打开语法高亮
 syntax on
 "设置背景色，每种配色有两种方案，一个light、一个dark
 "设置配色，这里选择的是desert，也有其他方案，在vim中输入:color 在敲tab键可以查看
 set background=dark
+
 colorscheme desert 
 
 "用空格键替换制表符
@@ -51,11 +93,8 @@ set noswapfile
 
 " 文件类型检测
 filetype plugin indent on 
-
-autocmd Filetype ruby setlocal ts=2 sts=2 sw=2
+autocmd Filetype ruby   setlocal ts=2 sts=2 sw=2
 autocmd Filetype python setlocal ts=4 sts=4 sw=4
+
 let mapleader="'"
 inoremap jk <ESC>
-" if &diff
-"  colorscheme evening
-" endif

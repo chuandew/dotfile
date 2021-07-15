@@ -121,3 +121,8 @@ if command -v pyenv 1>/dev/null 2>&1; then
 fi
 export GO111MODULE=on
 export GOPROXY=https://goproxy.cn
+
+if type rg &> /dev/null; then
+    export FZF_DEFAULT_COMMAND='rg --files'
+    export FZF_DEFAULT_OPTS='-m --height 50% --border'
+fi
