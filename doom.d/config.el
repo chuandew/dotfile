@@ -56,7 +56,8 @@
 ;; You can also try 'gd' (or 'C-c c d') to jump to their definition and see how
 ;; they are implemented.
 
-;; (map! (:map c-mode-map :n "SPC " #'ff-find-other-file))
+(map! (:map c-mode-map :n "gh" #'ff-find-other-file))
+(map! (:map cpp-mode-map :n "gh" #'ff-find-other-file))
 
 (after! org
     ;; set the variable org-agenda-files so that org-mode will know which files to search for TODOs and scheduled items.
@@ -66,15 +67,19 @@
                                    (file+headline "~/Dropbox/org/gtd/inbox.org" "Tasks")
                                    "* TODO %i%?")))
 
-    (setq org-refile-targets '(("~/Dropbox/org/gtd/gtd.org" :maxlevel . 3)
-                               ("~/Dropbox/org/gtd/someday.org" :level . 1)
-                               ("~/Dropbox/org/gtd/tickler.org" :maxlevel . 2)))
+    (setq org-tag-alist '(("@work" . ?w) ("@home" . ?h ) ("@notes" . ?n)))
+
+
+    (setq org-refile-targets '(("~/Dropbox/org/gtd/work.org" :maxlevel . 2)
+                               ("~/Dropbox/org/gtd/life.org" :level . 2)
+                               ("~/Dropbox/org/gtd/study.org" :level . 2)
+                               ("~/Dropbox/org/gtd/goal.org" :maxlevel . 2)))
 
     ;; (setq org-default-notes-file "~/Dropbox/org/gtd/notes.org")
 
     ;; TODO keywords.
     (setq org-todo-keywords
-          '((sequence "TODO(t)" "NEXT(n)" "PROG(p)"  "INTR(i)" "|" "DONE(d)" "CANCELD(c)")))
+          '((sequence "TODO(t)" "INPROGRESS(i)" "WAITING(p)" "|" "DONE(d)" "CANCELLED(c)")))
 
     ;; Show the daily agenda by default.
     ;; (setq org-agenda-span 'day)
