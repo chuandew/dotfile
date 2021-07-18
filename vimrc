@@ -60,7 +60,7 @@ set softtabstop=2
 "高亮搜索
 set hlsearch
 " 突出显示当前行
-set cursorline
+" set cursorline
 "在输入要搜索的文字时，vim会实时匹配
 set incsearch
 " 总是显示状态栏
@@ -90,6 +90,8 @@ nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 " no swap
 set noswapfile
+" change dir
+set autochdir
 
 " 文件类型检测
 filetype plugin indent on 
