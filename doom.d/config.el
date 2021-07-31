@@ -71,8 +71,8 @@
 
 
     (setq org-refile-targets '(("~/Dropbox/org/gtd/work.org" :maxlevel . 2)
-                               ("~/Dropbox/org/gtd/life.org" :level . 2)
-                               ("~/Dropbox/org/gtd/study.org" :level . 2)
+                               ("~/Dropbox/org/gtd/life.org" :maxlevel . 2)
+                               ("~/Dropbox/org/gtd/study.org" :maxlevel . 2)
                                ("~/Dropbox/org/gtd/goal.org" :maxlevel . 2)))
 
     ;; (setq org-default-notes-file "~/Dropbox/org/gtd/notes.org")
@@ -111,3 +111,12 @@
                                 "--header-insertion=never"
                                 "--header-insertion-decorators=0"))
 (after! lsp-clangd (set-lsp-priority! 'clangd 2))
+
+;; chinese input use rime
+;; note! not turn on chinese in init.el
+(setq default-input-method "rime"
+      rime-show-candidate 'posframe)
+(setq rime-user-data-dir "~/.config/fcitx/rime")
+
+;; for c and c++ code
+(setq c-basic-offset 2)
