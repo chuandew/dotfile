@@ -127,18 +127,18 @@
 (after! cc-mode
   (c-add-style
    "my-cc" '("user"
-             (c-tab-always-indent . t)
              (c-basic-offset . 2)
+             (c-tab-always-indent . nil)
              (tab-width . 2)
+             (indent-tabs-mode . nil)
              (c-offsets-alist
               . ((innamespace . 0)
                  (access-label . 0)
-                 (label . +)
+                 (label . 0)
                  (case-label . 0)
                  (member-init-intro . +)
                  (topmost-intro . 0)
                  (arglist-cont-nonempty . +)))))
-
 (setq c-default-style "my-cc"))
 
 (setq lsp-clients-clangd-args '("-j=3"
