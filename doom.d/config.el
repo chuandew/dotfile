@@ -104,6 +104,43 @@
     ;;          nil)))
   )
 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; CC
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;;(use-package! bazel-mode
+;;  :defer t
+;;  :commands bazel-mode
+;;  :init
+;;  (add-to-list 'auto-mode-alist '("BUILD\\(\\.bazel\\)?\\'" . bazel-mode))
+;;  (add-to-list 'auto-mode-alist '("WORKSPACE\\'" . bazel-mode))
+;;  :config
+;;  ;; disable format-all becuase it doesn't sort BUILD list variables
+;;  (setq bazel-mode-buildifier-before-save t)
+;;  (appendq! +format-on-save-enabled-modes '(bazel-mode)))
+;;
+;;(add-to-list 'auto-mode-alist '("\\.inl\\'" . +cc-c-c++-objc-mode))
+;;(add-to-list 'auto-mode-alist '("\\.inc\\'" . +cc-c-c++-objc-mode))
+
+(setq-default c-basic-offset 2)
+
+(after! cc-mode
+  (c-add-style
+   "my-cc" '("user"
+             (c-tab-always-indent . t)
+             (c-basic-offset . 2)
+             (tab-width . 2)
+             (c-offsets-alist
+              . ((innamespace . 0)
+                 (access-label . 0)
+                 (label . +)
+                 (case-label . 0)
+                 (member-init-intro . +)
+                 (topmost-intro . 0)
+                 (arglist-cont-nonempty . +)))))
+
+(setq c-default-style "my-cc"))
+
 (setq lsp-clients-clangd-args '("-j=3"
                                 "--background-index"
                                 "--clang-tidy"
@@ -112,11 +149,12 @@
                                 "--header-insertion-decorators=0"))
 (after! lsp-clangd (set-lsp-priority! 'clangd 2))
 
-;; chinese input use rime
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Chinese Input
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; note! not turn on chinese in init.el
 (setq default-input-method "rime"
       rime-show-candidate 'posframe)
 (setq rime-user-data-dir "~/.config/fcitx/rime")
 
-;; for c and c++ code
-(setq c-basic-offset 2)
