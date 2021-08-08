@@ -81,6 +81,11 @@
     (setq org-todo-keywords
           '((sequence "TODO(t)" "INPROGRESS(i)" "WAITING(p)" "|" "DONE(d)" "CANCELLED(c)")))
 
+    (setq org-log-done 'time)
+
+    (setq org-log-done 'note)
+
+
     ;; Show the daily agenda by default.
     ;; (setq org-agenda-span 'day)
 
