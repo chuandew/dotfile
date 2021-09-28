@@ -8,6 +8,10 @@ echo "create .vimrc"
 rm ~/.vimrc
 ln -s `pwd`/vimrc ~/.vimrc
 
+echo "create .gitignore_global"
+rm ~/.gitignore_global
+ln -s `pwd`/gitignore_global ~/.gitignore_global
+
 echo "create .gitconfig"
 rm ~/.gitconfig
 ln -s `pwd`/gitconfig ~/.gitconfig

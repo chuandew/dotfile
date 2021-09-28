@@ -83,9 +83,6 @@
 
     (setq org-log-done 'time)
 
-    (setq org-log-done 'note)
-
-
     ;; Show the daily agenda by default.
     ;; (setq org-agenda-span 'day)
 
@@ -171,5 +168,4 @@
 ;; note! not turn on chinese in init.el
 (setq default-input-method "rime"
       rime-show-candidate 'posframe)
-(setq rime-user-data-dir "~/.config/fcitx/rime")
-
+(setq rime-user-data-dir "~/.config/ibus/rime")

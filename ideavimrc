@@ -99,6 +99,8 @@ nnoremap <Leader>se :action SearchEverywhere<CR>
 "action about files"
 nnoremap <Leader>ff :action GotoFile<CR>
 nnoremap <Leader>fr :action RecentFiles<CR>
+nnoremap <Leader>fs :action FileStructurePopup<CR>
+
 
 "action about code"
 nnoremap <Leader>cg :action Generate<CR>
