@@ -1,1 +1,14 @@
+.DS_Store
+.vscode
+.idea
+
+*.log
+
+.cache/
+
+# emacs projectile
+.projectile
+
+# cpp project
+build/
 compile_commands.json
