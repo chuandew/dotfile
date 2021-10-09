@@ -50,3 +50,5 @@
 ;(unpin! t)
 
 (package! rime)
+
+(package! protobuf-mode)
