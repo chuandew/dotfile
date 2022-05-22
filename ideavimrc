@@ -87,13 +87,12 @@ nnoremap <Leader>gb :action Back<CR>
 nnoremap <Leader>gf :action Forward<CR>
 
 "action about search"
-nnoremap <Leader>ss :action SearchEverywhere<CR>
+nnoremap <Leader>se :action SearchEverywhere<CR>
 nnoremap <Leader>sa :action GotoAction<CR>
 nnoremap <Leader>sc :action GotoClass<CR>
-nnoremap <Leader>sf :action GotoSymbol<CR>
+nnoremap <Leader>ss :action GotoSymbol<CR>
 nnoremap <Leader>sp :action ShowFilePath<CR>
 nnoremap <Leader>su :action FindUsages<CR>
-nnoremap <Leader>se :action SearchEverywhere<CR>
 "nnoremap <Leader>su :action ShowUsages<CR>"
 
 "action about files"

@@ -7,6 +7,7 @@
 	editor = /usr/bin/vim
 	excludesfile = ~/.gitignore_global
 	precomposeUnicode = true
+	quotepath = false
 [alias]
   la = "!git config -l | grep alias | cut -c 7-"
   ls = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --decorate --abbrev-commit
