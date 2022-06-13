@@ -28,6 +28,10 @@ echo "create .tmux.conf"
 rm ~/.tmux.conf
 ln -s `pwd`/tmux.conf ~/.tmux.conf
 
+echo "create .gdbinit"
+rm ~/.gdbinit
+ln -s `pwd`/gdbinit ~/.gdbinit
+
 echo "create .doom.d dir"
 rm -rf ~/.doom.d
 ln -s `pwd`/doom.d ~/.doom.d
