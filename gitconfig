@@ -53,3 +53,5 @@
       cmd = meld "$LOCAL" "$REMOTE"
 [credential]
 	helper = store
+[init]
+	defaultBranch = main
