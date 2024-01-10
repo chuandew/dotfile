@@ -103,29 +103,28 @@ bindkey -M emacs '^N' history-substring-search-down
 export LANGUAGE=en_US
 export LANG=en_US.UTF-8
 
-export PATH=~/.emacs.d/bin:$PATH:/usr/local/go/bin
-export PATH=$PATH:/usr/local/go/bin
+#export PATH=~/.emacs.d/bin:$PATH:/usr/local/go/bin
+#export PATH=$PATH:/usr/local/go/bin
 alias e='emacsclient -t'
 alias eg='emacsclient -c --no-wait'
-export PATH="$HOME/.jenv/bin:$PATH"
+#export PATH="$HOME/.jenv/bin:$PATH"
+#eval "$(jenv init -)"
 
-eval "$(jenv init -)"
+#export NVM_DIR="$HOME/.nvm"
+#[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+#[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
-export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
-if command -v pyenv 1>/dev/null 2>&1; then
-  eval "$(pyenv init --path)"
-fi
+#export PYENV_ROOT="$HOME/.pyenv"
+#export PATH="$PYENV_ROOT/bin:$PATH"
+#if command -v pyenv 1>/dev/null 2>&1; then
+#  eval "$(pyenv init --path)"
+#fi
 
 
-export GOROOT=/usr/local/go
-export GOPATH=~/workspace/go
-export GO111MODULE=on
-export GOPROXY=https://goproxy.cn
+#export GOROOT=/usr/local/go
+#export GOPATH=~/workspace/go
+#export GO111MODULE=on
+#export GOPROXY=https://goproxy.cn
 
 if type rg &> /dev/null; then
     export FZF_DEFAULT_COMMAND='rg --files'
