@@ -55,3 +55,6 @@
 	helper = store
 [init]
 	defaultBranch = main
+[user]
+  name = wchuande
+  email = wangchuande@outlook.com
