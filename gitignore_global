@@ -9,6 +9,8 @@
 # emacs projectile
 .projectile
 
+a.out
+
 # cpp project
 build/
 compile_commands.json
