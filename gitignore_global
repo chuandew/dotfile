@@ -14,3 +14,6 @@ a.out
 # cpp project
 build/
 compile_commands.json
+
+#python
+__pycache__/
