@@ -15,5 +15,12 @@ a.out
 build/
 compile_commands.json
 
+#java
+.gradle/
+java/core/bin/
+java/lite/bin/
+java/kotlin/bin/
+java/kotlin-lite/bin/
+
 #python
 __pycache__/
